@@ -10,6 +10,58 @@
 # General
 --------------------------------------------------------------*/
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.myself .property {
+    width: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.myself .value {
+    text-align: left;
+    padding-left: 10px;
+    width: 70%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+blockquote {
+    font-size: 1.4em;
+    width: 60%;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: '';
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
@@ -743,7 +795,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-    color: #149ddd;
+    color: #2bdd14;
 }
 
 .services .title {
